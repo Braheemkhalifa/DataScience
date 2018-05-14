@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(0, 0, 127);
+
+}</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>671</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+
+  
+	background-color: rgb(0, 0, 127);
+
+}
+</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="VisualizeTab">
+    <attribute name="title">
+     <string>Visualize</string>
+    </attribute>
+    <widget class="QGraphicsView" name="graphicsView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>641</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGraphicsView{
+
+	background-color: rgb(255, 255, 255);
+
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Showbtn">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>440</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+      
+	font: 17pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Show</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="UserApplicantBtn">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>460</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+      
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Users Applicant</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="SalaryAverageBtn">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>420</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+      
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Salary Average</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="JobApplicantBtn">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>460</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+      
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Jobs Applicant</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="JobViewsBtn">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>420</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+      
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Job Views</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="SelectCategory">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>420</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+
+    
+	background-color: rgb(0, 0, 0);
+  
+	font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+	color: rgb(255, 255, 255);
+
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Category 1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Category 2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Category 3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Industry 1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>industry 2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>industry 3</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="SelectCategory_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>460</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+
+    
+	background-color: rgb(0, 0, 0);
+  
+	font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+	color: rgb(255, 255, 255);
+
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Bar Chart</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pie Chart</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="SearchTab">
+    <attribute name="title">
+     <string>Search</string>
+    </attribute>
+    <widget class="QPushButton" name="SearchBtn">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>140</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+      
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="InputSearch">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>140</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+
+	background-color: rgb(255, 255, 255);
+
+}</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="ChooseSearch">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>140</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+
+    
+	background-color: rgb(0, 0, 0);
+  
+	font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+	color: rgb(255, 255, 255);
+
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>City</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Job</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Category</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Industry</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>571</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox{
+
+	color: rgb(255, 255, 255);
+	font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+}</string>
+     </property>
+     <property name="title">
+      <string>Job Description</string>
+     </property>
+     <widget class="QLineEdit" name="Jobsearch">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+
+	background-color: rgb(255, 255, 255);
+
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="JobsearchBtn">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>30</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+      
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+
+	font: 11pt &quot;MS Shell Dlg 2&quot;;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="JobDescription">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>70</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+      
+	background-color: rgb(255, 255, 255);
+	font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>180</y>
+       <width>571</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser
+{
+ 
+	background-color: rgb(255, 255, 255);
+  
+	color: rgb(0, 0, 0);
+
+}</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
